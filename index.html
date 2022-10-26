@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/260aa9c9d8.js" crossorigin="anonymous"></script>
+    <title>Proyecto Turibot</title>
+    
+    <!--     Fonts and icons     -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- CSS Files -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    
+    <div class="relative overflow-hidden bg-white">
+  <div class="mx-auto max-w-7xl" style="min-height: 100vh;">
+    <div class="relative px-4 pt-6 sm:px-6 lg:px-8" style="z-index: 1;">
+      <nav class="relative flex items-center justify-between sm:h-10 navbar" aria-label="Global">
+        <div class="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
+          <div class="flex w-full items-center justify-between md:w-auto">
+            <a href="#" style="max-width: 250px">
+                <span class="sr-only">Itaipu Binacional</span>
+                <img src="assets/icons/logo/logoIB.png" alt="" >
+            </a>
+            <div class="-mr-2 flex items-center md:hidden">
+              <button id="toggleMobileDrop" onclick="opendrop()" type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                <span class="sr-only">Abrir menú principal</span>
+                <!-- Heroicon name: outline/bars-3 -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Atractivos</a>
+
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Info</a>
+
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Contacto</a>
+
+        </div>
+        </div>
+        
+
+        <div class="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
+          <a href="#" class="font-medium text-gray-500 hover:text-gray-900">
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+              Reserva
+            </button>
+            </a>
+        </div>
+      </nav>
+    </div>
+
+    
+    <main class="mx-auto flex main-hero grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:lg:grid-cols-2" >
+        <div class="sm:text-center lg:text-left order-first mt-11 sm:mt-12 mx-10" style="display: flex;flex-direction: column;justify-content: center;">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline">¡Hola! Soy <span style="color: #1BAEBF;">Tur</span><span style="color: #79DE79;">ib</span><span style="color: #1BAEBF;">ot</span>.</span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">Vivo en <span style="font-weight: 700;">Paraguay</span>  y estoy aqui para ayudarte a conocer todos los atractivos de la margen derecha del <span style="font-weight: 700;">Complejo Turístico de Itaipu</span>. Juntos, podemos reservar tus visitas, sacar todas las dudas, además de descubrir cosas muy interesantes sobre la Itaipu Binacional y sus atractivos. <a href="">¿Empezamos?</a></p>
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a href="https://www.youtube.com/watch?v=Ad08tK0E_bo" class="flex w-full items-center justify-center rounded-md border border-transparent bg-red-500 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-7 md:text-lg">
+                <img src="assets/icons/whatsapp 1.svg" alt=""> Iniciar</a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="order-last my-12">
+          <img src="assets/img/turibot.png" alt="">
+        </div>
+      </main>
+    
+  </div>
+  
+</div>
+
+<!--
+          Mobile menu, show/hide based on menu open state.
+
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+        <div class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden lg:hidden xl:hidden" style="display:none;">
+          <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+            <div class="flex items-center justify-between px-5 pt-4">
+              <div>
+                <img src="assets/icons/logo/logoIB.png" alt="" >
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close main menu</span>
+                  <!-- Heroicon name: outline/x-mark -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Atractivos</a>
+
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Info</a>
+
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Contacto</a>
+
+            </div>
+            <a href="#" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Reserva</a>
+          </div>
+        </div>
+      </div>
+
+<div class="relative overflow-hidden atractivos-hero">
+  <main class="mx-auto my-10 max-w-7xl px-4 sm:my-12 sm:px-6 md:my-16 lg:my-20 lg:px-8 xl:my-28">
+        <div class="sm:text-center lg:text-center">
+          <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl mb-10">
+            <span class="block xl:inline sm:text-center lg:text-center" style="font-family: 'Inter';font-style: normal;font-weight: 800;font-size: 36px;line-height: 125%;display: flex;align-items: center;text-align: center;color: #A8E4EF;text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.06);">Atractivos del Complejo Turistico de Itaipu</span>
+          </h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 atractivos-icons">
+                <div>
+                    <img src="assets/img/atractivos/central-hidroelectrica_0.png" alt="">
+                    <h4>Vista Panorámica</h4>
+                    <p>Central Hidroeléctrica Itaipu</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/modelo-reducido_0.png" alt="">
+                    <h4>Modelo reducido</h4>
+                    <p>de la Hidroeléctrica Itaipu</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/luminica_0.png" alt="">
+                    <h4>Iluminación Monumental</h4>
+                    <p>de la Hidroeléctrica Itaipu</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/museo-tierra-guarani_0.png" alt="">
+                    <h4>Museo Itaipu</h4>
+                    <p>Tierra guaraní</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/refugio-tatiyupi_0.png" alt="">
+                    <h4>Reserva Natural</h4>
+                    <p>Tati Yupí</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/mbaracayu_0.png" alt="">
+                    <h4>Refúgio Biológico</h4>
+                    <p>Mbaracayú</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/costanera_0.png" alt="">
+                    <h4>Costanera</h4>
+                    <p>Hernandarias</p>
+                </div>
+                <div>
+                    <img src="assets/img/atractivos/paque-lineal-0.png" alt="">
+                    <h4>Parque Lineal</h4>
+                    <p>Manuel Ortíz Guerrero</p>
+                </div>
+            </div>      
+          </div>
+        </div>
+      </main>
+      
+</div>
+
+
+
+<div class="relative overflow-hidden bg-white" style="min-height: 70vh;">
+  <main class="mx-auto mt-10 max-w-7xl px-10 sm:mt-12 sm:px-6 md:my-16 lg:my-20 lg:px-8 xl:my-28 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+      <div class="sm:text-center lg:text-left hero-whatsapp pr-5" style="display: flex;flex-direction: column;gap: 14px;">
+            <p style="font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 18px;line-height: 18px;color: #0CC078;">¿Cómo usar el bot?</p>
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              <span class="block xl:inline" style="font-family: 'Inter';font-style: normal;font-weight: 800;font-size: 36px;line-height: 125%;color: #111928;">Soy un bot de WhatsApp, por eso, sólo debes hacer click en iniciar.</span>
+            </h2>
+            <p style="font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 20px;line-height: 150%;color: #6B7280;">Luego te llegará una notificación  en el aplicativo Whatsapp, indicando que estamos iniciando la conversación. Te daré varias alternativas para que puedas seleccionar alguna y empezar juntos a navegar por las informaciones de cada atractivo. </p>
+            <hr style="max-width: 90%;">
+            <button class="bg-white font-semibold py-2" style="font-family: 'Inter';font-style: normal;font-weight: 500;font-size: 16px;line-height: 23px;color: #0CC078;text-align: left;">
+              <a href="" style="display: flex;gap: 12px;align-items: center;">Lo que encontrarás en mi programación <img src="assets/icons/arrow.svg" alt=""></a>
+            </button>  
+      </div>
+      <div class="sm:text-center lg:text-left grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2  whatsapp-items">
+        <div class="pr-5 mr-5 my-10">
+            <img src="assets/icons/travel-map.svg" alt="">
+            <h4>Listado de atractivos</h4>
+            <p>Para que puedas conocer a cada uno de nuestros recorridos. </p>
+        </div>
+        <div class="pr-5 mr-5 my-10">
+            <img src="assets/icons/tickets.svg" alt="">
+            <h4>Reservas</h4>
+            <p>Agenda tu visita al los paseos del complejo sin salir de tu casa.</p>
+
+        </div>
+        <div class="pr-5 mr-5 my-10">
+
+            <img src="assets/icons/brochure.svg" alt="">
+            <h4>Informaciones </h4>
+            <p>Todos los consejos que necesitas para tener una visita increíble. </p>
+        </div>
+        <div class="pr-5 mr-5 my-10">
+          <img src="assets/icons/communicate_1.svg" alt="">
+          <h4>Contacto</h4>
+          <p>Saca todas tus dudas a través de nuestros canales de atención.</p>
+
+        </div>
+
+
+      </div>
+
+  </main>
+      
+</div>
+
+
+<div class="relative overflow-hidden bg-gray-100" >
+  <main class="mx-auto my-10 max-w-7xl px-6 sm:my-12 sm:px-6 md:my-16 lg:my-20 lg:px-60 xl:my-28">
+      <div class="text-center lg:text-center pr-5" style="display: flex;flex-direction: column;gap: 30px; align-items: center;">
+           
+            <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              <span class="block xl:inline" style="font-family: 'Inter';font-style: normal;font-weight: 800;font-size: 36px;line-height: 125%;color: #111928;">Reserva un paseo</span>
+            </h2>
+            <p style="font-family: 'Inter';font-style: normal;font-weight: 300;font-size: 20px;line-height: 150%;color: #6B7280;">Todos los paseos de los atractivos del complejo turistico de la Itaipu Binacional son gratuitos, pero debes realizar un a reserva. Para eso, necesitaremos algunos de tus datos personales. </p>
+           
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+              <a href="">Enviar formulario</a>
+            </button>  
+      </div>
+      
+
+  </main>
+      
+</div>
+
+
+<footer>
+
+  
+<div class="relative overflow-hidden bg-white" >
+
+  
+
+
+  <main class="mx-10 my-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
+
+    <div class="grid grid-rows-2 grid-flow-col gap-4">
+    
+      <div class="row-span-1 col-span-2 footer-links sm:text-left lg:text-left mb-30">
+        <div class="pr-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+           
+          <div class="mb-10">
+            <h4 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              ITAIPU
+            </h4>
+            <ul class="list-outside bg-gray-200">
+              <li><a href="">Nosotros</a></li>
+              <li><a href="">Curiosidades</a></li>
+              <li><a href="">Estadísticas</a></li>
+            </ul>
+          </div>
+          <div class="mb-10">
+            <h4 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              AYUDA E INFORMACIONES
+            </h4>
+            <ul class="list-outside bg-gray-200 ">
+              <li><a href="">Contacto</a></li>
+              <li><a href="">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+          <div class="mb-10">
+            <h4 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              LEGAL
+            </h4>
+            <ul class="list-outside bg-gray-200">
+              <li><a href="">Política de Privacidad</a></li>
+              <li><a href="">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row-span-2 col-span-2 flex mb-10" style="align-items: flex-end;">
+        <div class="pr-5 row-span-2 col-span-2">
+           
+          <div>
+            <img src="assets/icons/logo/logoIB.png" alt="" style="margin-bottom: 20px; max-width: 60%;">
+          </div>
+          <div class="copyright">
+            <p>© 2022. Todos los derechos reservados. Complejo Turistico Itaipu.</p>
+            <div class="social">
+
+              <img src="assets/icons/instagram.svg" alt="icono instagram">
+            <img src="assets/icons/twitter.svg" alt="icono twitter">
+            <img src="assets/icons/facebook.svg" alt="icono facebook">
+            <img src="assets/icons/whatsapp.svg" alt="icono whatsapp">
+            <img src="assets/icons/youtube.svg" alt="icono youtube">
+            </div>
+            
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="row-span-3 "></div>
+    </div>
+
+      
+
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14413.157561538183!2d-54.6369444!3d-25.4285868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b1040ba5169179c!2sCentro%20de%20Recepci%C3%B3n%20de%20Visitas%20ITAIPU!5e0!3m2!1ses-419!2spy!4v1666749568683!5m2!1ses-419!2spy" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+      </div>
+      
+
+  </main>
+      
+</div>
+
+</footer>
+
+
+<script>
+
+  
+
+  function opendrop() {
+    
+  }
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+.main-hero h1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px;
+  color: #111928;
+}
+
+.main-hero p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #6B7280;
+}
+
+.main-hero .rounded-md img {
+  margin-right: 10px;
+}
+.atractivos-hero {
+    min-height: 70vh;
+    background: #1BAEBF;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .atractivos-hero h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .atractivos-icons h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+
+  .atractivos-icons p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #CBF6F8;
+  }
+
+  .atractivos-icons div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+
+  .atractivos-icons img {
+    max-width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .navbar {
+    color:#1BAEBF;
+    font-family: 'Inter';
+    font-style: normal;
+  }
+
+  .navbar a {
+    color: #1BAEBF
+  }
+
+  .whatsapp-items h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: #111928;
+  }
+
+  .whatsapp-items p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B7280;
+  }
+
+  .hero-whatsapp button:hover a{
+    color: black;
+  }
+
+  .hero-whatsapp button:hover img{
+    filter: saturate(0) brightness(0);
+  }
+
+  .whatsapp-items .pr-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+  }
+
+
+  .footer-links h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #111928;
+  }
+
+  .footer-links li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B7280;
+    background: none;
+  }
+  .footer-links ul{
+    background: none;
+  }
+
+  .copyright {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B7280;
+  }
+
+  .social {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
