@@ -1,5 +1,5 @@
 .main-hero h1{
-  font-family: 'Inter';
+  font-family: 'Segoe UI';
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
@@ -8,7 +8,7 @@
 }
 
 .main-hero p {
-  font-family: 'Inter';
+  font-family: 'Segoe UI';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -30,7 +30,7 @@
     justify-content: center;
   }
   .atractivos-hero h2 {
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
@@ -41,7 +41,7 @@
     justify-content: center;
   }
   .atractivos-icons h4 {
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 900;
     font-size: 18px;
@@ -50,7 +50,7 @@
   }
 
   .atractivos-icons p {
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -73,7 +73,7 @@
 
   .navbar {
     color:#1BAEBF;
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
   }
 
@@ -82,7 +82,7 @@
   }
 
   .whatsapp-items h4 {
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -91,7 +91,7 @@
   }
 
   .whatsapp-items p {
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -116,7 +116,7 @@
 
 
   .footer-links h4{
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -126,7 +126,7 @@
   }
 
   .footer-links li {
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -144,7 +144,7 @@
     flex-direction: column;
     align-items: flex-start;
 
-    font-family: 'Inter';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -158,3 +158,27 @@
     flex-direction: row;
     align-items: flex-start;
   }
+
+  .top-bar {
+    background-color: #0CC078;
+    height: fit-content;
+    padding-block: 5px;
+  }
+
+  .top-bar .flex{
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+    gap:5px;
+    text-align: left;
+  }
+
+  .top-bar .flex img{
+    max-height:28px;
+}
+
+  
